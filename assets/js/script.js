@@ -51,7 +51,7 @@ $(document).ready(function () {
       searchLocation.val(cityName);
     }
 
-    var geoLocationQuery = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=${queryLimit}&appid=${apiKey}`;
+    var geoLocationQuery = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=${queryLimit}&appid=${apiKey}`;
     //execute fetch function for query
     fetch(geoLocationQuery)
       .then(function (response) {
@@ -68,7 +68,7 @@ $(document).ready(function () {
 
   function fetchWeather(lon, lat) {
     // https://api.openweathermap.org/data/3.0/onecall/timemachine?lat={lat}&lon={lon}&dt={time}&appid={API key}
-    var weatherQuery = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+    var weatherQuery = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 
     fetch(weatherQuery)
       .then(function (response) {

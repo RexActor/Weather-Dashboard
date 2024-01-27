@@ -8,7 +8,7 @@ $(document).ready(function () {
   var historyCityList = [];
 
   //API key for openweatherMap
-  var apiKey = "d4d1be039064550a18e8a7809e249e51";
+  var apiKey = "88fbdc0b313db9e97cf8d5dffe66d4b9";
 
   //query limit
   var queryLimit = 1;
@@ -128,7 +128,7 @@ $(document).ready(function () {
     var iconImage = $("<img>");
 
     //http://openweathermap.org/img/w/{code}.png
-    iconImage.attr("src", `http://openweathermap.org/img/w/${iconCode}.png`);
+    iconImage.attr("src", `https://openweathermap.org/img/w/${iconCode}.png`);
 
     tempItem.text(`Temp: ${temp} \xB0C`);
     windItem.text(`Wind: ${windSpeed} KPH`);

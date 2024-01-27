@@ -1,0 +1,27 @@
+* {
+    /* background-color: cornflowerblue; */
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    --background-color: rgb(20, 41, 91);
+}
+
+.card {
+    background-color: var(--background-color);
+    color: white;
+    margin: 4px;
+
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.list-group-item {
+    background-color: var(--background-color);
+    margin: 0;
+
+    color: white;
+}

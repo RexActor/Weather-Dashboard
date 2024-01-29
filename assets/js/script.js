@@ -22,13 +22,14 @@ $(document).ready(function () {
   //checks for any clicks in document. if clicked element with class name search-button we execute function
   $(document).on("click", ".search-button", function (event) {
     //prevent default action
+    console.log("click");
     event.preventDefault();
     //clearing parent elements if they have already data populated
     $("#today").empty();
     $("#forecast").empty();
     var cityName;
     //   checks if provided any value in input field. if not then return back from function
-    if (!searchLocation.val()) {
+    if (!searchLocation.val() && !$(event.target).attr("data-city")) {
       return;
     }
     //check if search button is clicked. if so then we generate history button

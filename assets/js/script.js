@@ -8,7 +8,7 @@ $(document).ready(function () {
   var historyCityList = [];
 
   //API key for openweatherMap
-  var apiKey = "88fbdc0b313db9e97cf8d5dffe66d4b9";
+  var apiKey = ${{ secrets.WEATHER_API }};
 
   //query limit
   var queryLimit = 1;
